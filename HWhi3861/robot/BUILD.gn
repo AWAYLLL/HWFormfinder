@@ -1,0 +1,116 @@
+# Copyright (c) 2022 HiSilicon (Shanghai) Technologies CO., LIMITED.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+static_library("appDemoIot") {
+  sources = [
+    "app_# Copyright (c) 2020, HiHope Community.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+#    contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+static_library("robot_demo") {
+    sources = [
+        #"robot_hcsr04.c",
+        #"robot_l9110s.c",
+        #"robot_sg90.c",
+        #"trace_model.c",
+        #"ssd1306_test.c",
+        #"robot_control.c",
+        #"F_steer_sg90.c",
+        #"hcsr04.c",
+        #"PWM.c",
+        #"0714.c",
+        #"0715.c",
+        #"sin.c",
+        "xiaoche_0718.c",
+        "encoder.c",
+        #"app_demo_iot.c",
+        "cjson_init.c",
+        "iot_hmac.c",
+        "iot_log.c",
+        "iot_main.c",
+        "iot_profile.c",
+        "iot_sta.c",
+    ]
+
+    include_dirs = [
+        "./ssd1306",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/kal/cmsis",
+        "//base/iothardware/peripheral/interfaces/inner_api",
+        "./",
+        "//commonlibrary/utils_lite/include",
+        "//kernel/liteos_m/kal/cmsis",
+        "//base/iothardware/peripheral/interfaces/inner_api",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/lwip_sack/include/lwip",
+        "//third_party/cJSON",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/mbedtls/include/mbedtls",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/paho.mqtt.c/include/mqtt",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/libcoap/include/coap2",
+    ]
+    #deps = [ "ssd1306:oled_ssd1306" ]
+}
+
+demo_iot.c",
+    "cjson_init.c",
+    "iot_hmac.c",
+    "iot_log.c",
+    "iot_main.c",
+    "iot_profile.c",
+    "iot_sta.c",
+    "rader.c",
+  ]
+
+  include_dirs = [
+    "./",
+    "//commonlibrary/utils_lite/include",
+    "//kernel/liteos_m/kal/cmsis",
+    "//base/iothardware/peripheral/interfaces/inner_api",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/lwip_sack/include/lwip",
+    "//third_party/cJSON",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/mbedtls/include/mbedtls",
+    "//foundation/communication/wifi_lite/interfaces/wifiservice",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/paho.mqtt.c/include/mqtt",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/libcoap/include/coap2",
+    "//utils/nativete/include",
+    "//kernelteos_ml",
+    "//base/iot_hardware/peripheral/interfaces/kits",
+    "//kernelteos_ml/cmsis",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/include",
+  ]
+
+  defines = [ "WITH_LWIP" ]
+}
